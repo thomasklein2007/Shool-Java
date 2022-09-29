@@ -202,13 +202,73 @@ void mousePressed(){
     for  (int j = 0; j < cols;  j++)  {
         a  [i]  [j] = 0;
        if(b[tellerb] == 2){
-       print("x");
+       if(b[tellerb] == b[0]){
+         line(25, 25, 75, 75);
+         line(25, 75, 75, 25);
+       }
+       if(b[tellerb] == b[1]){
+         line(125, 25, 175, 75);
+         line(125, 75, 175, 25);
+       }
+       if(b[tellerb] == b[2]){
+         line(225, 25, 275, 75);
+         line(225, 75, 275, 25);
+       }
+       if(b[tellerb] == b[3]){
+         line(25, 125, 75, 175);
+         line(25, 175, 75, 125);
+       }
+       if(b[tellerb] == b[4]){
+         line(125, 125, 175, 175);
+         line(125, 175, 175, 125);
+       }
+       if(b[tellerb] == b[5]){
+         line(225, 125, 275, 175);
+         line(225, 175, 275, 125);
+       }
+       if(b[tellerb] == b[6]){
+         line(25, 225, 75, 275);
+         line(25, 275, 75, 225);
+       }
+       if(b[tellerb] == b[7]){
+         line(125, 225, 175, 275);
+         line(125, 275, 175, 225);
+       }
+       if(b[tellerb] == b[8]){
+         line(225, 225, 275, 275);
+         line(225, 275, 275, 225);
+       }
        }else if(b[tellerb] == 3)
        {
-        print("o");
+        if(b[tellerb] == b[0]){
+         ellipse(50, 50, 50, 50); 
+        }
+        if(b[tellerb] == b[1]){
+         ellipse(150, 50, 50, 50); 
+        }
+        if(b[tellerb] == b[2]){
+         ellipse(250, 50, 50, 50); 
+        }
+        if(b[tellerb] == b[3]){
+         ellipse(50, 150, 50, 50); 
+        }
+        if(b[tellerb] == b[4]){
+         ellipse(150, 150, 50, 50); 
+        }
+        if(b[tellerb] == b[5]){
+         ellipse(250, 150, 50, 50); 
+        }
+        if(b[tellerb] == b[6]){
+         ellipse(50, 250, 50, 50); 
+        }
+        if(b[tellerb] == b[7]){
+         ellipse(150, 250, 50, 50); 
+        }
+        if(b[tellerb] == b[8]){
+         ellipse(250, 250, 50, 50); 
+        }
        }
-       else{print("-");}
-        
+               
         rect(xwaarde,ywaarde,100,100);
         xwaarde+=100;
         tellerb ++;
@@ -220,8 +280,13 @@ void mousePressed(){
 }
 
 void mijnMethode(){
-if(b[0] == 3 && b[1] == 3 && b[2] == 3){
-    println("speler 2 heeft gewonen");
+  if(b[0] == 2 && b[1] == 2 && b[2] == 2){
+    println("speler 1 heeft gewonen");
     line(0 ,50 , 300, 50);
+  }else{
+  if(b[0] == 3 && b[1] == 3 && b[2] == 3){
+     println("speler 2 heeft gewonen");
+     line(0, 50, 300, 50);
+    }
   }
 }
