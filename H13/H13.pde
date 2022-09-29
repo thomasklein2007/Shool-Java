@@ -282,11 +282,74 @@ void mousePressed(){
 void mijnMethode(){
   if(b[0] == 2 && b[1] == 2 && b[2] == 2){
     println("speler 1 heeft gewonen");
-    line(0 ,50 , 300, 50);
+    line(0, 50, 300, 50);
   }else{
   if(b[0] == 3 && b[1] == 3 && b[2] == 3){
      println("speler 2 heeft gewonen");
      line(0, 50, 300, 50);
+    }
+  }
+  if(b[3] == 2 && b[4] == 2 && b[5] == 2){
+    println("speler 1 heeft gewonen");
+    line(0, 150, 300, 150);
+  }else{
+  if(b[3] == 3 && b[4] == 3 && b[5] == 3){
+     println("speler 2 heeft gewonen");
+     line(0, 150, 300, 150);
+    }
+  }
+  if(b[6] == 2 && b[7] == 2 && b[8] == 2){
+    println("speler 1 heeft gewonen");
+    line(0, 250, 300, 250);
+  }else{
+  if(b[6] == 3 && b[7] == 3 && b[8] == 3){
+     println("speler 2 heeft gewonen");
+     line(0, 250, 300, 250);
+    }
+  }
+  if(b[0] == 2 && b[3] == 2 && b[6] == 2){
+    println("speler 1 heeft gewonen");
+    line(50, 0, 50, 300);
+  }else{
+  if(b[0] == 3 && b[3] == 3 && b[6] == 3){
+     println("speler 2 heeft gewonen");
+     line(50, 0, 50, 300);
+    }
+  }
+  if(b[1] == 2 && b[4] == 2 && b[7] == 2){
+    println("speler 1 heeft gewonen");
+    line(150, 0, 150, 300);
+  }else{
+  if(b[1] == 3 && b[4] == 3 && b[7] == 3){
+     println("speler 2 heeft gewonen");
+     line(150, 0, 150, 300);
+    }
+  }
+  if(b[2] == 2 && b[5] == 2 && b[8] == 2){
+    println("speler 1 heeft gewonen");
+    line(250, 0, 250, 300);
+  }else{
+  if(b[2] == 3 && b[5] == 3 && b[8] == 3){
+     println("speler 2 heeft gewonen");
+     line(250, 0, 250, 300);
+    }
+  }
+  if(b[0] == 2 && b[4] == 2 && b[8] == 2){
+    println("speler 1 heeft gewonen");
+    line(0, 50, 300, 50);
+  }else{
+  if(b[0] == 3 && b[4] == 3 && b[8] == 3){
+     println("speler 2 heeft gewonen");
+     line(0, 0, 300, 300);
+    }
+  }
+  if(b[2] == 2 && b[4] == 2 && b[6] == 2){
+    println("speler 1 heeft gewonen");
+    line(300, 300, 0, 0);
+  }else{
+  if(b[20] == 3 && b[4] == 3 && b[6] == 3){
+     println("speler 2 heeft gewonen");
+     line(300, 300, 0, 0);
     }
   }
 }
