@@ -5,7 +5,7 @@ int[][] a = new int [cols]  [rows];
 int[] b = new int [9];
 int xwaarde = 0;
 int ywaarde = 0;
-
+//
 void setup(){
   //de hokjes maken
   size(300,300);
