@@ -1,4 +1,5 @@
 boolean player1 = true;
+boolean game = false;
 int cols = 3;
 int rows = 3;
 int[][] a = new int [cols]  [rows];
@@ -117,7 +118,7 @@ void draw(){
 
 void mousePressed(){
 //de rondjes en kruisjes
-  if ( mousePressed &&( b[0]==1)){
+  if ( mousePressed &&( b[0]==1) && game == false){
     if(player1){
          b[0] = 2;
        }else{
@@ -126,7 +127,7 @@ void mousePressed(){
     player1 = !player1;
   } 
   
-  if ( mousePressed &&( b[1]==1)){
+  if ( mousePressed &&( b[1]==1) && game == false){
     if(player1){
          b[1] = 2;
        }else{
@@ -135,7 +136,7 @@ void mousePressed(){
     player1 = !player1;
   } 
   
-  if ( mousePressed &&( b[2]==1)){
+  if ( mousePressed &&( b[2]==1) && game == false){
     if(player1){
          b[2] = 2;
        }else{
@@ -144,7 +145,7 @@ void mousePressed(){
     player1 = !player1;
   } 
   
-  if ( mousePressed &&( b[3]==1)){
+  if ( mousePressed &&( b[3]==1) && game == false){
     if(player1){
          b[3] = 2;
        }else{
@@ -153,7 +154,7 @@ void mousePressed(){
     player1 = !player1;
   } 
   
-  if ( mousePressed &&( b[4]==1)){
+  if ( mousePressed &&( b[4]==1) && game == false){
     if(player1){
          b[4] = 2;
        }else{
@@ -162,7 +163,7 @@ void mousePressed(){
     player1 = !player1;
   } 
   
-  if ( mousePressed &&( b[5]==1)){
+  if ( mousePressed &&( b[5]==1) && game == false){
     if(player1){
          b[5] = 2;
        }else{
@@ -171,7 +172,7 @@ void mousePressed(){
     player1 = !player1;
   } 
   
-  if ( mousePressed &&( b[6]==1)){
+  if ( mousePressed &&( b[6]==1) && game == false){
     if(player1){
          b[6] = 2;
        }else{
@@ -180,7 +181,7 @@ void mousePressed(){
     player1 = !player1;
   } 
   
-  if ( mousePressed &&( b[7]==1)){
+  if ( mousePressed &&( b[7]==1) && game == false){
     if(player1){
          b[7] = 2;
        }else{
@@ -189,7 +190,7 @@ void mousePressed(){
     player1 = !player1;
   } 
   
-  if ( mousePressed &&( b[8]==1)){
+  if ( mousePressed &&( b[8]==1) && game == false){
     if(player1){
          b[8] = 2;
        }else{
@@ -277,52 +278,59 @@ void mousePressed(){
     ywaarde+=100;
     xwaarde=0;
   } 
-}
-
-void mijnMethode(){
   if(b[0] == 2 && b[1] == 2 && b[2] == 2){
     println("speler 1 heeft gewonen");
     line(0, 50, 300, 50);
+    game = true;
   }else{
   if(b[0] == 3 && b[1] == 3 && b[2] == 3){
      println("speler 2 heeft gewonen");
      line(0, 50, 300, 50);
+     game = true;
     }
   }
   if(b[3] == 2 && b[4] == 2 && b[5] == 2){
     println("speler 1 heeft gewonen");
     line(0, 150, 300, 150);
+    game = true;
   }else{
   if(b[3] == 3 && b[4] == 3 && b[5] == 3){
      println("speler 2 heeft gewonen");
      line(0, 150, 300, 150);
+     game = true;
     }
   }
   if(b[6] == 2 && b[7] == 2 && b[8] == 2){
     println("speler 1 heeft gewonen");
     line(0, 250, 300, 250);
+    game = true;
   }else{
   if(b[6] == 3 && b[7] == 3 && b[8] == 3){
      println("speler 2 heeft gewonen");
      line(0, 250, 300, 250);
+     game = true;
     }
   }
   if(b[0] == 2 && b[3] == 2 && b[6] == 2){
     println("speler 1 heeft gewonen");
     line(50, 0, 50, 300);
+    game = true;
   }else{
   if(b[0] == 3 && b[3] == 3 && b[6] == 3){
      println("speler 2 heeft gewonen");
      line(50, 0, 50, 300);
+     game = true;
     }
   }
   if(b[1] == 2 && b[4] == 2 && b[7] == 2){
     println("speler 1 heeft gewonen");
     line(150, 0, 150, 300);
+    game = true;
   }else{
   if(b[1] == 3 && b[4] == 3 && b[7] == 3){
      println("speler 2 heeft gewonen");
      line(150, 0, 150, 300);
+     game = true;
     }
   }
   if(b[2] == 2 && b[5] == 2 && b[8] == 2){
@@ -332,24 +340,29 @@ void mijnMethode(){
   if(b[2] == 3 && b[5] == 3 && b[8] == 3){
      println("speler 2 heeft gewonen");
      line(250, 0, 250, 300);
+     game = true;
     }
   }
   if(b[0] == 2 && b[4] == 2 && b[8] == 2){
     println("speler 1 heeft gewonen");
-    line(0, 50, 300, 50);
+    line(0, 0, 300, 300);
+    game = true;
   }else{
   if(b[0] == 3 && b[4] == 3 && b[8] == 3){
      println("speler 2 heeft gewonen");
      line(0, 0, 300, 300);
+     game = true;
     }
   }
   if(b[2] == 2 && b[4] == 2 && b[6] == 2){
     println("speler 1 heeft gewonen");
-    line(300, 300, 0, 0);
+    line(0, 300, 300, 0);
+    game = true;
   }else{
-  if(b[20] == 3 && b[4] == 3 && b[6] == 3){
+  if(b[2] == 3 && b[4] == 3 && b[6] == 3){
      println("speler 2 heeft gewonen");
-     line(300, 300, 0, 0);
+     line(0, 300, 300, 0);
+     game = true;
     }
   }
 }
