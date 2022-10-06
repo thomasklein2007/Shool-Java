@@ -25,7 +25,7 @@ void setup(){
 }
 
 void draw(){
-
+  
 }
 
 void mousePressed(){
@@ -42,9 +42,8 @@ void mousePressed(){
     }
   }
 
-  for  (int i = 0; i < rows; i++)  {
-    for  (int j = 0; j < cols;  j++)  {
-        
+  for  (int i = 0; i < rows; i++){
+    for  (int j = 0; j < cols;  j++){
        if(tiles[i][j] == 1){
            line(25 + i * 100, 25 + j * 100, 75 + i * 100, 75 + j * 100);
            line(25 + i * 100, 75 + j * 100, 75 + i * 100, 25 + j * 100);
@@ -56,6 +55,5 @@ void mousePressed(){
     }
     ywaarde+=100;
     xwaarde=0;
-  } 
-
+  }
 }
