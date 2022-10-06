@@ -40,36 +40,16 @@ void draw(){
 
 void mousePressed(){
   for(int i = 0; i <= 3; i++){
-    if (mouseX > 0 + i * 100 && mouseY > 0 && mouseX < 100 + i * 100 && mouseY < 100 && !game){
-      if(player1){
-           b[tellerb] = 1;
-         }else{
-           b[tellerb] = 2;
-         }
-      player1 = !player1;
-    } 
-  }
-  
-  for(int i = 0; i <= 3; i++){
-    if (mouseX > 0 + i * 100 && mouseY > 100 && mouseX < 100 + i * 100 && mouseY < 200 && !game){
-      if(player1){
-           b[tellerb] = 1;
-         }else{
-           b[tellerb] = 2;
-         }
-      player1 = !player1;
-    } 
-  }
-
-  for(int i = 0; i <= 3; i ++){
-    if (mouseX > 0 + i * 100 && mouseY > 200 && mouseX < 100 + i * 100 && mouseY < 300 && !game){
-      if(player1){
-           b[6] = 1;
-         }else{
-           b[6] = 2;
-         }
-      player1 = !player1;
-    } 
+    for(int j = 0; j <= 3; j++){
+      if (mouseX > 0 + i * 100 && mouseY > 0 + j * 100 && mouseX < 100 + i * 100 && mouseY < 100 + j * 100 && !game){
+        if(player1){
+             b[tellerb] = 1;
+           }else{
+             b[tellerb] = 2;
+           }
+        player1 = !player1;
+      } 
+    }
   }
 
   int tellerb=0;
