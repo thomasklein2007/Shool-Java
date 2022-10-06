@@ -25,7 +25,11 @@ void setup(){
 }
 
 void draw(){
-  
+  for( int i = 0; i <= 8; i++){
+    if(tiles[i][j] && tiles[i+1][j+1] && tiles[i+2][j+2] ){
+      
+    }
+  }
 }
 
 void mousePressed(){
