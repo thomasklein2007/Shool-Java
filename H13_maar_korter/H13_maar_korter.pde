@@ -25,9 +25,11 @@ void setup(){
 }
 
 void draw(){
-  for( int i = 0; i <= 8; i++){
-    if(tiles[i][j] && tiles[i+1][j+1] && tiles[i+2][j+2] ){
-      
+  for( int i = 0; i <= 1; i++){
+    for( int j = 0; j <= 1; j++){
+    if(tiles[i][j] == 1 && tiles[i+1][j+1] == 1 && tiles[i+2][j+2] == 1 ){
+      println("drie op een rei");
+    }  
     }
   }
 }
